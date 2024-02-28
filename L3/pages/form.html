@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Форма</title>
+</head>
+<body>
+<h1>Форма</h1>
+
+<form action="/submit_form.php" method="post">
+  <div>
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="surname">Прізвище:</label>
+    <input type="text" id="surname" name="surname" required>
+  </div>
+  <div>
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <div>
+    <label>Стать:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Чоловік</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Жінка</label>
+  </div>
+  <div>
+    <input type="checkbox" id="remember" name="remember">
+    <label for="remember">Запам'ятати мене</label>
+  </div>
+  <div>
+    <label for="city">Місто проживання:</label>
+    <select id="city" name="city">
+      <option value="kyiv">Київ</option>
+      <option value="sumy">Суми</option>
+      <option value="lviv">Львів</option>
+      <option value="odesa">Одеса</option>
+    </select>
+  </div>
+  <div>
+    <label for="comment">Коментар:</label><br>
+    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+  </div>
+  <div>
+    <input type="submit" value="Надіслати">
+  </div>
+</form>
+
+</body>
+</html>
